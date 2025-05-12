@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Find Your Match - Dating Site</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .container {
+    width: 100%;
+    max-width: 350px;
+    height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  h1 {
+    color: #f85d5d;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    text-align: center;
+    user-select: none;
+  }
+  p.subtitle {
+    color: #555;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .images-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+  .images-wrapper img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(248,93,93, 0.4);
+    transition: transform 0.3s ease;
+  }
+  .images-wrapper img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  a.download-btn {
+    background: #f85d5d;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 14px 42px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(248,93,93, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+  a.download-btn:hover {
+    background: #d94343;
+    box-shadow: 0 12px 25px rgba(217,67,67, 0.7);
+  }
+  @media (max-width: 370px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    a.download-btn {
+      font-size: 1.1rem;
+      padding: 12px 36px;
+    }
+    .images-wrapper img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Dating site landing page">
+    <h1>Find Your Match Today</h1>
+    <p class="subtitle">Join thousands of singles looking for love</p>
+    <div class="images-wrapper" aria-label="Sample dating profile photos">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=72&h=72&q=80" alt="Smiling woman portrait" loading="lazy"/>
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=72&h=72&q=80" alt="Man with beard smiling" loading="lazy"/>
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=72&h=72&q=80" alt="Happy couple outdoors" loading="lazy"/>
+      <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=72&h=72&q=80" alt="Laughing young woman" loading="lazy"/>
+      <img src="https://images.unsplash.com/photo-1508214751190-0042c3c984d0?auto=format&fit=crop&w=72&h=72&q=80" alt="Couple holding hands" loading="lazy"/>
+    </div>
+    <a href="https://example.com/app.apk" class="download-btn" aria-label="Download dating app now" download>Download Now</a>
+  </div>
+</body>
+</html>
+
